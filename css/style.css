@@ -1,0 +1,174 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/open-sans-v26-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+	src: local('Open Sans'),
+		  url('../fonts/open-sans-v26-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/open-sans-v26-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+
+ }
+ /* open-sans-700 - latin_cyrillic */
+ @font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/open-sans-v26-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+	src: local('Open Sans'),
+		  url('../fonts/open-sans-v26-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+		  url('../fonts/open-sans-v26-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+ }
+
+html {
+	box-sizing: border-box;
+	background-color: #fbfbfb;
+}
+/*Изменяет алгоритм определения ширины и высоты блока. width height включают в себя padding и border, но не включает margin*/
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+/*Все элементы и псевдоэлементы наследуют box-sizing от родительского элемента*/
+
+img {
+	max-width: 100%;
+}
+/*Задаем максимальную ширину отображения изображение, равную реальной максимальной ширине*/
+
+a {
+	text-decoration: none; /*отменяем все эффекты оформления, в т.ч. подчеркивание*/
+
+	color: inherit; /*цвет наследуется от родительского элемента*/
+}
+
+.visually-hidden {
+	position: absolute !important; /*повышает приоритет*/
+
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);  /*определяет область позиционированного элемента, в которой будет показано его содержимое. Всё, что не помещается в эту область, будет обрезано и становится невидимым*/
+
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+
+	border: 0 !important;
+}
+
+.list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 57px;
+	max-width: 1440px;
+}
+
+.hero {
+	margin-bottom: 24px;
+}
+
+.hero__container {
+	background-color: #FFF6ED;
+	min-height: 636px;
+	padding-top: 60px;
+	padding-bottom: 42px;
+
+}
+
+.hero__title {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.section-title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 54px;
+}
+
+.hero__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hero__items {
+	flex-basis: 375px;
+}
+
+.title-bright {
+	color: #FF7A00;
+}
+
+.content__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40.85px;
+}
+
+.services__title {
+	margin-bottom: 10px;
+}
+
+.services__information {
+	max-width: 592px;
+	padding-top: 36px;
+}
+
+.services__container {
+	background-color: #FFFFFF;
+}
+
+.other-services__container {
+	min-height: 275px;
+	display: flex;
+	justify-content: space-between;
+	background-image: url('http://cw67071.tmweb.ru/sprites/ellipse.svg');
+	background-repeat: no-repeat;
+	background-position: 731px 0;
+}
+
+.social-icons {
+	padding-top: 68px;
+	display: flex;
+	height: 238px;
+}
+
+.social-icons li:nth-child(2n) {
+	margin-right: 10px;
+	align-self: flex-end;
+}
+
+.social-logo {
+	width: 70px;
+	height: 70px;
+	fill: white;
+}
+
+.hero-logos {
+	width: 375px;
+	height: 288px;
+}
+
